@@ -1,0 +1,43 @@
+algorithme_phrase                                      LP(long phrase) NM(NOMB MOT)  NV(nomb voyelle)--------->compteurs
+ 
+
+variables
+   entier   : LP,NM,NV  
+    char    : cara  
+
+    char    : '  '  
+                              
+     ( . )  : constant :=1
+
+ début
+         
+         écrire ('entrer les cara ')
+         lire( cara)
+
+         écrire ( . )
+         lire (   .   )
+          
+
+    Tant que ( cara      <>     ( .  )     )
+        
+        LP <- LP + 1(constant)
+
+
+        Si (cara =  'a', 'e', 'i', 'o', 'u', 'y' ) alors 
+      
+            NV <----- NV 
+     fin si
+      
+        Si (cara <> 'espace' )
+            NM <------- NM 
+     fin si 
+        
+    Fin Tant que
+
+
+
+ecrire LP 
+ecrire NM
+ecrire NV
+    
+Fin
